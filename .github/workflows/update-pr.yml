@@ -12,8 +12,8 @@ jobs:
         branch-regex: 'FOO-\d+'
         lowercase-branch: false
         title-template: '[%branch%]'
-        title-prefix-separator: ' '
+        title-prefix-separator: " "
         uppercase-title: false
         body-template: '[Link to %branch%](https://url/to/browse/ticket/%branch%)'
-        body-prefix-separator: '\n\n'
+        body-prefix-separator: "\n\n"
         uppercase-body: false
