@@ -13,5 +13,5 @@ jobs:
         lowercase-branch: false
         title-template: '[%branch%] '
         uppercase-title: false
-        body-template: '[Link to %branch%](https://url/to/browse/ticket/%branch%)'
+        body-template: '[Link to %branch%](https://url/to/browse/ticket/%branch%)\n\n'
         uppercase-body: false
