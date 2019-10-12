@@ -11,9 +11,9 @@ jobs:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
         branch-regex: 'FOO-\d+'
         lowercase-branch: false
-        title-template: "[%branch%] "
-        title-prefix-separator: " "
+        title-template: '[%branch%]'
+        title-prefix-space: true
         uppercase-title: false
         body-template: '[Link to %branch%](https://url/to/browse/ticket/%branch%)'
-        body-prefix-separator: \n\n
+        body-prefix-newline-count: 2
         uppercase-body: false
