@@ -9,9 +9,9 @@ jobs:
     - uses: tzkhan/pr-update-action@v1
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
-        branch-regex: '[A-Z]+-\d+|no-ticket'
+        branch-regex: 'FOO-\d+'
         lowercase-branch: false
         title-template: '[%branch%] '
         uppercase-title: false
-        body-template: 'Link to [%branch%]'
+        body-template: '[Link to %branch%](https://url/to/browse/ticket/%branch%)'
         uppercase-body: false
