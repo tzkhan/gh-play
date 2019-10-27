@@ -6,6 +6,10 @@
 
 Too many rockets!
 
+```javascript
+console.log('without pre');
+```
+
 ```javascript (pre)
-console.log('works');
+console.log('with pre');
 ```
