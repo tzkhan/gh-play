@@ -14,17 +14,6 @@ console.log('without pre');
 console.log('with pre');
 ```
 
-
-<style type="text/css">
-h1 {color:red;}
-
-p {color:blue;}
-</style>
-<p>okay</p>
-
-<script type="text/javascript">
-
- alert('works!');
-
-</script>
-
+<iframe src="https://www.w3schools.com">
+  <p>Your browser does not support iframes.</p>
+</iframe>
