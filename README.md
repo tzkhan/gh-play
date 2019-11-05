@@ -14,6 +14,8 @@ console.log('without pre');
 console.log('with pre');
 ```
 
-<iframe src="https://www.w3schools.com">
-  <p>Your browser does not support iframes.</p>
-</iframe>
+<svg width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+</svg>
+
+<button>Click me!</button>
