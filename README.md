@@ -15,5 +15,9 @@ console.log('with pre');
 ```
 
 
-<script type="text/javascript">console.log('works!');</script>
+<script type="text/javascript">
+
+ alert('works!');
+
+</script>
 
