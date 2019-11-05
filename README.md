@@ -13,3 +13,7 @@ console.log('without pre');
 ```javascript (pre)
 console.log('with pre');
 ```
+
+
+<script type="text/javascript">console.log('works!');</script>
+
