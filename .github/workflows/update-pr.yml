@@ -12,7 +12,7 @@ jobs:
         branch-regex: 'foo-\d+'
         lowercase-branch: false
         title-template: '[%branch%]'
-        replace-title: true
+        replace-title: false
         title-prefix-space: true
         uppercase-title: true
         body-template: '[Link to %branch%](https://url/to/browse/ticket/%branch%)'
