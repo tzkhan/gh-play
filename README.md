@@ -1,3 +1,3 @@
 # gh-play
 
-Testing action!
+Testing action
