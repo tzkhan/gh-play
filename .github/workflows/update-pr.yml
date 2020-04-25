@@ -17,7 +17,7 @@ jobs:
         uppercase-title: true
         body-template: |
           '[Link to %branch%](https://url/to/browse/ticket/%branch%)'
-          This is a lot of text
-        replace-body: true
+          This will also get prefixed to the PR body
+        replace-body: false
         body-prefix-newline-count: 2
         uppercase-body: true
