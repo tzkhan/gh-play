@@ -12,12 +12,12 @@ jobs:
         branch-regex: 'foo-\d+'
         lowercase-branch: false
         title-template: '[%branch%]'
-        replace-title: false
+        replace-title: true
         title-prefix-space: true
         uppercase-title: true
         body-template: |
           '[Link to %branch%](https://url/to/browse/ticket/%branch%)'
           This will also get prefixed to the PR body
-        replace-body: false
+        replace-body: true
         body-prefix-newline-count: 2
         uppercase-body: true
