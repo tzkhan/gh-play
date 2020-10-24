@@ -6,7 +6,7 @@ jobs:
   pr_update_text:
     runs-on: ubuntu-latest
     steps:
-    - uses: tzkhan/pr-update-action@new-tokens
+    - uses: tzkhan/pr-update-action@feature/new-tokens
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
         base-branch-regex: '[a-z\\d-_.\\/]+'
