@@ -9,7 +9,7 @@ jobs:
     - uses: tzkhan/pr-update-action@feature/new-tokens
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
-        base-branch-regex: '[a-z\\d-_.\\/]+'
+        base-branch-regex: '[a-z\d-_.\\/]+'
         head-branch-regex: 'foo-\d+'
         title-template: '[%headbranch%] '
         title-update-action: 'prefix'
