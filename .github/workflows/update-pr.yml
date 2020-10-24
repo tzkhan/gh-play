@@ -6,14 +6,15 @@ jobs:
   pr_update_text:
     runs-on: ubuntu-latest
     steps:
-    - uses: tzkhan/pr-update-action@v1.1
+    - uses: tzkhan/pr-update-action@new-tokens
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
-        branch-regex: 'foo-\d+'
-        lowercase-branch: false
-        title-template: '[%branch%]'
-        title-prefix-space: true
-        uppercase-title: true
-        body-template: '[Link to %branch%](https://url/to/browse/ticket/%branch%)'
-        body-prefix-newline-count: 2
-        uppercase-body: true
+        base-branch-regex: '[a-z\\d-_.\\/]+'
+        head-branch-regex: 'foo-\d+'
+        title-template: '[%headbranch%] '
+        title-update-action: 'prefix'
+        body-template: |
+          Merging into '%basebranch%'
+          [Link to %headbranch%](https://url/to/browse/ticket/%headbranch%)
+        body-update-action: 'suffix'
+        body-newline-count: 2
