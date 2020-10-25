@@ -16,3 +16,12 @@ jobs:
           [Link to %headbranch%](https://url/to/browse/ticket/%headbranch%)
         body-update-action: 'suffix'
         body-uppercase-base-match: false
+  check_outputs:
+      runs-on: ubuntu-latest
+      needs: update_pr
+      steps:
+      - run: |
+          echo 'baseMatch:' ${{needs.update_pr.outputs.baseMatch}}
+          echo 'headMatch:' ${{needs.update_pr.outputs.headMatch}}
+          echo 'titleUpdated:' ${{needs.update_pr.outputs.titleUpdated}}
+          echo 'bodyUpdated:' ${{needs.update_pr.outputs.bodyUpdated}}
