@@ -4,8 +4,14 @@ on: pull_request
 jobs:
   update_pr:
     runs-on: ubuntu-latest
+    outputs:
+      baseMatch: ${{ steps.update_pr.outputs.baseMatch }}
+      headMatch: ${{ steps.update_pr.outputs.headMatch }}
+      titleUpdated: ${{ steps.update_pr.outputs.titleUpdated }}
+      bodyUpdated: ${{ steps.update_pr.outputs.bodyUpdated }}
     steps:
-    - uses: tzkhan/pr-update-action@feature/new-tokens
+    - id: update_pr
+      uses: tzkhan/pr-update-action@feature/new-tokens
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
         base-branch-regex: '[a-z\d-_.\\/]+'
